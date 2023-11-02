@@ -18,7 +18,6 @@ interface ChartComponent {
 }
 
 const Chart: React.FC<ChartComponent> = ({ title, data, dataKey, grid }) => {
-  console.log({ grid });
   return (
     <div className="p-6 my-6 shadow-lg">
       <h3 className="mb-5 text-xl font-semibold">{title}</h3>

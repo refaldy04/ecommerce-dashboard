@@ -1,5 +1,7 @@
 import Chart from "@/components/Chart";
 import FeaturedInfo from "@/components/FeaturedInfo";
+import WidgetLg from "@/components/WidgetLg";
+import WidgetSm from "@/components/WidgetSm";
 import { userData } from "@/dummyData";
 
 export default function Home() {
@@ -12,6 +14,10 @@ export default function Home() {
         dataKey="Active User"
         grid
       />
+      <div className="grid grid-cols-3 gap-3">
+        <WidgetSm />
+        <WidgetLg />
+      </div>
     </main>
   );
 }
