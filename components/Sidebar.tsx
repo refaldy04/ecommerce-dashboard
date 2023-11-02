@@ -16,7 +16,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="col-span-1 h-[calc(100vh_-_56px)] bg-transparent sticky top-14">
+    <div className="col-span-1 h-[calc(100vh_-_56px)] bg-gray-100 sticky top-14">
       <div className="p-5 text-[#555] flex flex-col gap-5">
         <div className="">
           <h3 className="text-sm text-slate-400">Dashboard</h3>
