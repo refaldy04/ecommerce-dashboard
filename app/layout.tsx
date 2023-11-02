@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import Topbar from "@/components/Topbar";
+import Sidebar from "@/components/Sidebar";
 
 const source = Source_Sans_3({ subsets: ["latin"] });
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={source.className}>{children}</body>
+      <body className={source.className}>
+        <Topbar />
+        <div className="grid grid-cols-5">
+          <Sidebar />
+          <div className="col-span-4">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
